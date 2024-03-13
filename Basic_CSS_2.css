@@ -1,0 +1,10 @@
+p {
+	color: blue;
+	background-color: red;
+	font-size: large;
+	text-align: center;
+}
+/* This is a comment */
+h1 {
+	text-shadow: 5px 5px 10px #00FF00;
+}
