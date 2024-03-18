@@ -4,6 +4,12 @@ p {
 	font-size: large;
 	text-align: center;
 }
+.a {
+	color: black;
+	background-color: green;
+	font-size: large;
+	text-align: center;
+}
 /* This is a comment */
 h1 {
 	text-shadow: 5px 5px 10px #00FF00;
