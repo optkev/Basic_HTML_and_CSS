@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Best Fantasy Books</title>
 		<meta charset="utf-8">	
+		<link rel="stylesheet" href="./css/one_page_website.css">
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 	</head>
+
 	<body>
 		
 		<!-- NAV -->
-		<div>
-			<div>
-				<ul>
-					<a href="#home" id="link"><li>Home</li></a>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#home"><li>Home</li></a>
 					<a href="#gallery"><li>Gallery</li></a>
-					<a href="#contact"><li>What are your favorite books?</li></a>
 					<a href="#video"><li>Video</li></a>
+					<a href="#contact"><li>Favorite Books?</li></a>
 				</ul>
 			</div>
 	    </div>
@@ -21,10 +41,10 @@
 		
 		<!-- HOME -->
 		<div id="home">
-			<div>
+			<div class="container">
 				<h1>Home</h1>
-				<div>
-					<span>Welcome to my best fantasy books website!</span>
+				<div class="text-center">
+					<span class="head-main">Welcome to my best fantasy books website!</span>
 					<p>I will be adding new favorites weekly</p>
 				</div>
 			</div>
@@ -32,17 +52,17 @@
 		<!-- END HOME -->
 		
 		<!-- GALLERY -->
-		<section>
-			<div id="gallery">
+		<section id="gallery">
+			<div class="container">
 				<h1>Gallery</h1>
-				<div>
+				<div class="flex-container">
 				
 					<!-- PHOTO-CONTANINER 1 -->
-					<div>
-						<div> 
+					<div class="photo-container">
+						<div class="photo"> 
 							<img src="./images/thumbnail_1.jpg" alt="">
-							<div>
-							<h3>Click to Enlarge</h3>
+							<div class="photo-overlay">
+							<h3>Click Here</h3>
 							<p>Lord of the Rings</p>
 						</div>
 					</div>
@@ -50,11 +70,11 @@
 				<!-- END PHOTO-CONTANINER 1 -->
 				
 				<!-- PHOTO-CONTANINER 2 -->
-					<div>
-						<div> 
+					<div class="photo-container">
+						<div class="photo"> 
 							<img src="./images/thumbnail_2.jpg" alt="">
-							<div>
-							<h3>Click to Enlarge</h3>
+							<div class="photo-overlay">
+							<h3>Click Here</h3>
 							<p>The Wheel of Time</p>
 						</div>
 					</div>
@@ -62,39 +82,44 @@
 				<!-- END PHOTO-CONTANINER 2 -->
 				
 				<!-- PHOTO-CONTANINER 3 -->
-					<div>
-						<div> 
+					<div class="photo-container">
+						<div class="photo"> 
 							<img src="./images/thumbnail_3.jpg" alt="">
-							<div>
-							<h3>Click to Enlarge</h3>
+							<div class="photo-overlay">
+							<h3>Click Here</h3>
 							<p>A Song of Ice and Fire</p>
 						</div>
 					</div>
 				</div>
 				<!-- END PHOTO-CONTANINER 3 -->
+
 			</div>
 		</div>
 		</section>
 		<!-- END GALLERY -->
 		
 		<!-- Video -->
-		<section>
-			<div id="video">
+		<section id="video">
+			<div>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/m30aJX4-cnA?si=571sME_pD6Zf3LWJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			</div>
-		</section
+		</section>
 		<!-- End Video -->
 		
 		<!-- RSVP --> 
-		<section>
+		<section id="contact">
 			<div id="contact">
-				<div>
-					<h1>What are your favorite books?</h1>
-					<div>
-						<p>
-							Please provide me with your contact information.
+				<div class="heading-padding">
+					<h1 class="heading-padding">Favorite books?</h1>
+					<div class="favorite-books">
+						<h2>
+							<span>What are your favorite books?</span>
+							<br />Lets get to know each other better and talk about the your best books list!
+						</h2>
+						<p class="rsvp-text">
+							Your Contact Information
 						</p>
-						<div>
+						<div class="form-rsvp">
 							<form action="" method="post">
 								<input class="rsvp" type="text" value="First Name">
 								<input class="rsvp" type="text" value="Last Name">
@@ -103,19 +128,20 @@
 								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
-								<div>
+								<div class="submit">
 									<input type="submit" value="Submit">
 								</div>
 							</form>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</section>
 		<!-- END RSVP -->
 	
 		<!-- FOOTER -->
-		<div>	
+		<div id="footer">	
 			www.bestfantasybooks.com &nbsp;|&nbsp;  	&copy; 2024
 		</div>
 		<!-- END FOOTER -->
