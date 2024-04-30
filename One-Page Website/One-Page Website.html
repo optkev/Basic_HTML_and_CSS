@@ -4,6 +4,7 @@
 		<title>Best Fantasy Books</title>
 		<meta charset="utf-8">	
 		<link rel="stylesheet" href="./css/one_page_website.css">
+		<script src="JS/one_page_website.js" defer></script>
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -60,7 +61,7 @@
 					<!-- PHOTO-CONTANINER 1 -->
 					<div class="photo-container">
 						<div class="photo"> 
-							<img src="./images/thumbnail_1.jpg" alt="">
+							<img src="./images/thumbnail_1.jpg" onclick="openModal();currentSlide(1)" alt="" class="hover-shadow">
 							<div class="photo-overlay">
 							<h3>Click Here</h3>
 							<p>Lord of the Rings</p>
@@ -72,7 +73,7 @@
 				<!-- PHOTO-CONTANINER 2 -->
 					<div class="photo-container">
 						<div class="photo"> 
-							<img src="./images/thumbnail_2.jpg" alt="">
+							<img src="./images/thumbnail_2.jpg" onclick="openModal();currentSlide(2)" alt="" class="hover-shadow">
 							<div class="photo-overlay">
 							<h3>Click Here</h3>
 							<p>The Wheel of Time</p>
@@ -84,7 +85,7 @@
 				<!-- PHOTO-CONTANINER 3 -->
 					<div class="photo-container">
 						<div class="photo"> 
-							<img src="./images/thumbnail_3.jpg" alt="">
+							<img src="./images/thumbnail_3.jpg" onclick="openModal();currentSlide(3)" alt="" class="hover-shadow">
 							<div class="photo-overlay">
 							<h3>Click Here</h3>
 							<p>A Song of Ice and Fire</p>
@@ -97,7 +98,50 @@
 		</div>
 		</section>
 		<!-- END GALLERY -->
-		
+
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="./images/thumbnail_wide1.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="./images/thumbnail_wide2.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="./images/thumbnail_wide3.jpg" style="width:100%">
+			  </div>
+		  
+			  <!-- Next/previous controls -->
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+			  <!-- Caption text -->
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+		  
+			  <!-- Thumbnail image controls -->
+			  <div class="photo">
+				<img class="demo" src="./images/thumbnail_1.jpg" onclick="currentSlide(1)" alt="">
+			  </div>
+		  
+			  <div class="photo">
+				<img class="photo" src="./images/thumbnail_2.jpg" onclick="currentSlide(2)" alt="">
+			  </div>
+		  
+			  <div class="photo">
+				<img class="demo" src="./images/thumbnail_3.jpg" onclick="currentSlide(3)" alt="">
+			  </div>
+
+			</div>
+		</div>
 		<!-- Video -->
 		<section id="video">
 			<div>
